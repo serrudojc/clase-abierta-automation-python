@@ -13,3 +13,12 @@ notaFisica = int(input("Ingresar nota de fisica: "))
 
 promedio = (notaMatematica + notaLiteratura + notaFisica)/3
 print("Alumno: ",nombreApellido, ". Promedio: ",promedio)
+
+if(promedio >= 6):
+    print("Aprobado")
+    if(promedio >= 9):
+        print("Alumno Destacado")
+elif (promedio >= 4):
+    print("Insuficiente")
+else:
+    print("Desaprobado")
