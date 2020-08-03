@@ -1,5 +1,6 @@
-''' 
-Como podemos identificar los elementos?
+
+# Como podemos identificar los elementos?
+"""
 Id
 Name
 Link Text
@@ -13,7 +14,7 @@ Id
 Es el selector mas directo que hay. Usarlo siempre que sea posible.
 Ventaja: es único, no hay chance de confundirse con otro elemento.
 Desventaja: Si el sitio usa Id dinámico, no puedo usarlo.
-'''
+"""
 <input type="text" id="myText" size="30">
 
 inputText = driver.find_element_by_id('myText')
@@ -104,3 +105,37 @@ Deventaja: Dificilmente pueda ser usada para buscar eleementos unicos
 <p class="paragraphModel">
 
 inputText = driver.find_element_by_class_name('p.paragraphModel')
+
+
+
+#--------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+
+# Colecciones
+"""
+Una coleccion permite agrupar elementos bajo un mismo nombre.
+
+Ej, Tenemos distintos autos, en lugar de hacer una variable con cada auto, podemos
+agrupar todos como 'autos'.
+"""
+
+"""
+Listas
+# Conjunto ordenado de elementos (similar a un array)
+"""
+autos = ['Ford','Chevrole','Ferrari']
+print(autos[0])
+
+
+"""
+Tuplas
+Son colecciones ordendas inmutables. 
+"""
+colores = ('azul','rojo','amarillo')
+print(colores[1])
+
+"""
+Diccionarios
+Son listas no ordenadas donde cada elemento tiene la particularidad de tener el par
+clave:valor
+"""
